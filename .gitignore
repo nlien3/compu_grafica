@@ -1,0 +1,23 @@
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Archivos excluidos
+a.md
+profe.txt
+README.md
+
+# Archivos compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de entorno o configuración local
+*.env
+*.log
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db

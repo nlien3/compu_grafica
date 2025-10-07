@@ -1,0 +1,9 @@
+from abc import ABC, abstractmethod
+
+class RendererBase(ABC):
+    @abstractmethod
+    def on_resize(self, w: int, h: int): ...
+    @abstractmethod
+    def update(self, dt: float): ...
+    @abstractmethod
+    def render(self): ...
