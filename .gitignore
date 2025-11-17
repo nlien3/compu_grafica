@@ -4,8 +4,6 @@ venv/
 env/
 
 # Archivos excluidos
-a.md
-profe.txt
 README.md
 
 # Archivos compilados de Python
