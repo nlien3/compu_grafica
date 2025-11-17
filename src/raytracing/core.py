@@ -12,7 +12,7 @@ class RaytracingRenderer:
     Quad a pantalla; el fragment shader hace el raytracing
     (esfera + plano, Lambert/Phong, sombra dura).
     Controles:
-      T          : alternar TP4 ↔ Raytracing (lo maneja main/window)
+      T          : alternar (lo maneja main/window)
       ESPACIO    : pausar/seguir animación orbital de la luz
       W/S/A/D    : mover luz en XZ (continuo al mantener)
       R/F        : mover luz en Y
@@ -86,7 +86,7 @@ class RaytracingRenderer:
     def _hud_text(self):
         return (
             "Controles (Raytracing):\n"
-            "  T        : alternar TP4 ↔ Raytracing\n"
+            "  T        : alternar\n"
             "  ESPACIO  : pausar/seguir animación de la luz\n"
             "  W/S/A/D  : mover luz en XZ\n"
             "  R/F      : mover luz en Y\n"

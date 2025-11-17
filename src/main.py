@@ -35,7 +35,7 @@ def main():
     base = Path(__file__).resolve().parent.parent
     shaders_dir = base / "shaders"
 
-    win = Window(1280, 720, "Parcial CG 2025 – TP4 + Raytracing (T para alternar)")
+    win = Window(1280, 720, "TP 3 (T para alternar)")
 
     # ---- Modo A: Escena TP4 (picking) ----
     scene = build_tp4_scene(win, shaders_dir)
@@ -49,7 +49,7 @@ def main():
     def use_tp4():
         win.set_scene(scene)
         mode["rt"] = False
-        print("[Modo] TP4 + Picking")
+        print("[Modo]")
 
     def use_rt():
         win.set_scene(None)          # desconectamos la escena
@@ -60,7 +60,7 @@ def main():
     use_tp4()  # start
     print("""
 ================= CONTROLES =================
-T : Alternar TP4 <-> Raytracing
+T : Alternar
 H : Mostrar/ocultar HUD (solo en Raytracing)
 Espacio : Pausar/reanudar animación (Raytracing)
 W / S : Mover luz adelante / atrás
